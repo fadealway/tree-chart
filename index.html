@@ -1,0 +1,773 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Water Dashboard</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Water Dashboard">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <!--
+	<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+	<meta name="msapplication-TileColor" content="#3372DF">-->
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+function showmain(){
+// console.log("sads");
+    $("#overall").hide();
+    $("#main").show();
+}
+
+function showoverall(){
+// console.log("zzzz");
+    $("#overall").show();
+    $("#main").hide();
+}
+
+function changeRotate(){
+
+// jquery --------
+var main = $("#main").hasClass('tree-rotate');
+if(!main){
+$("#main").addClass('tree-rotate');
+$("#overall").addClass('tree-rotate');
+
+$(".4rotate").addClass('rotate');
+}else{
+$("#main").removeClass('tree-rotate');
+
+$("#overall").removeClass('tree-rotate');
+$(".4rotate").removeClass('rotate');
+}
+
+
+
+
+// pure javascript
+// var y = document.getElementById("main").className;
+// console.log(y);
+// if(y.length==4){
+//     console.log("Asdsad");
+// var d = document.getElementById("main");
+// d.className += " tree-rotate";
+
+// var x = document.getElementsByTagName("a");
+// console.log(x);
+// x.className += " rotate";
+
+// for(i=0;i < x.length;i++ ){
+// x[i].className += " rotate";
+// }
+
+// }else{
+
+// var d = document.getElementById("main");
+// d.className = "tree";
+
+// var x = document.getElementsByTagName("a");
+// // console.log(x);
+
+// for(i=0;i < x.length;i++ ){
+// x[i].className = " ";
+// }
+// }
+
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+
+
+
+    <div id="main" class="tree">
+        <ul>
+            <li>
+                <a href="#" class="4rotate">
+
+                    <h5>Raw/City water</h5>
+                    <hr> 43070
+                    <hr>
+                    <div class="water">
+                        <p>100%</p>
+
+                    </div>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" class="4rotate">
+                            <h6>Gardening/Fire</h6>
+                            <hr> 64
+                            <hr>
+                            <!--<p>0.01%</p>-->
+                            <div class="status">0.01%
+                                <div class="water10"></div>
+
+                            </div>
+                        </a>
+                        <!--<ul>
+						<li>
+							<a href="#" class="4rotate">Grand Child
+
+							</a>
+						</li>
+						<li>
+							<a href="#" class="4rotate">Grand Child</a>
+							<ul>
+								<li>
+									<a href="#" class="4rotate">Grand Child</a>
+								</li>
+								<li>
+									<a href="#" class="4rotate">Grand Child</a>
+								</li>
+							</ul>
+						</li>
+					</ul>-->
+                    </li>
+
+
+                    <li>
+                        <a href="#" class="4rotate">
+                            <h6>DI/Water making inlet</h6>
+                            <hr> 42952
+                            <hr>
+                            <div class="status"> 99.7%
+                                <div class="water90"> </div>
+                            </div>
+
+                            <!--<div style="background-color: green;  width:90% ;position: relative; height: 22px;">
+    <div style="position: absolute; ">55</div>
+                                                        </div>-->
+                        </a>
+                        <ul>
+
+                            <li>
+                                <a href="#" class="4rotate">
+                                    <h6>DI water Recycle RO recycle</h6>
+                                    <hr> 8246
+                                    <hr>
+                                    <div class="status">19%
+                                        <div class="water1-50 width20"></div>
+                                    </div>
+                                </a>
+
+                                <ul>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Toiler and Kitchen</h6>
+                                            <hr> 1975
+                                            <hr>
+                                            <div class="status">5%
+                                                <div class="water1-50 width5"></div>
+                                            </div>
+                                        </a>
+                                                                                        <ul>
+                                                    <li>
+                                                        <a href="#" id="etp" class="4rotate">ETP</a>
+                                                    </li>
+                                                </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>WWTS process Chemical mixing</h6>
+                                            <hr> 722
+                                            <hr>
+                                            <!--<p>2%</p>-->
+                                            <div class="status">2%
+                                                <div class="water1-50 width5"></div>
+                                            </div>
+                                        </a>
+                                                                                        <ul>
+                                                    <li>
+                                                        <a href="#" id="etp" class="4rotate">ETP</a>
+                                                    </li>
+                                                </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Cooling tower and Chiller </h6>
+                                            <hr> 5549
+                                            <hr>
+                                            <!--<p>13%</p>-->
+                                            <div class="status">13%
+                                                <div class="water1-50 width20"></div>
+                                            </div>
+                                        </a>
+                                                                                <ul>
+                                            <li>
+                                                <a href="#" class="4rotate">
+                                                    Cooling tower Blow down
+                                                    <hr>
+                                                    796
+                                                    <hr>
+                                            <div class="status">14%
+                                                <div class="water1-50 width20"></div>
+                                            </div>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" id="etp" class="4rotate">ETP</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                <a href="#" class="4rotate">
+                                    <h6>DI water Reject RO reject <br> (High Salt and Conductivity) </h6>
+                                    <hr> 6350
+                                    <hr>
+                                    <!--<p>15%</p>-->
+                                    <div class="status">15%
+                                        <div class="water1-50 width20"></div>
+                                    </div>
+                                </a>
+
+                                <ul>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Reject AREATION TANK</h6>
+                                            <hr> 5250
+                                            <!--<hr>-->
+                                            <!--<p>65%</p>-->
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Recycle to some process</h6>
+                                            <hr> 1100
+                                            <!--<hr>
+															<p>65%</p>-->
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                <a href="#" class="4rotate">
+                                    <h6>DI water outlet</h6>
+                                    <hr> 28101
+                                    <hr>
+                                    <!--<p>65%</p>-->
+                                    <div class="status">65%
+                                        <div class="water70 width70"></div>
+                                    </div>
+                                </a>
+
+                                <ul>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Water in product</h6>
+                                            <hr> 5577
+                                            <hr>
+                                            <!--<p>13%</p>-->
+                                            <div class="status">13%
+                                                <div class="water1-50 width10"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>C&S</h6>
+                                            <hr> 21285
+                                            <hr>
+                                            <!--<p>50%</p>-->
+                                            <div class="status">50%
+                                                <div class="water1-50 width50"></div>
+                                            </div>
+                                        </a>
+                                                                                <ul>
+                                            <li>
+                                                <a href="#" id="etp" class="4rotate">
+                                                    ETP
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Boiler</h6>
+                                            <hr> 591
+                                            <hr>
+                                            <!--<p>1%</p>-->
+                                            <div class="status">1%
+                                                <div class="water1-50 width10"></div>
+                                            </div>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="4rotate">
+                                                    Boiler blow down
+                                                    <hr>
+                                                    220
+                                                    <hr>
+                                            <div class="status">37%
+                                                <div class="water1-50 width30"></div>
+                                            </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>O2 reject</h6>
+                                            <hr> 648
+                                            <hr>
+                                            <!--<p>2%</p>
+                                            -->
+                                            <div class="status">2%
+                                                <div class="water1-50 width10"></div>
+                                            </div>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" id="recycle">
+                                                    Recycle
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="#" class="4rotate">
+                            <h6>MMF/Backwash</h6>
+                            <hr> 54
+                            <hr>
+                            <div class="status">0.01%
+                                <div class="water10"></div>
+
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <!--<li>
+					<a href="#" class="4rotate">Child</a>
+					<ul>
+						<li>
+							<a href="#" class="4rotate">Grand Child</a>
+							<ul>
+								<li>
+									<a href="#" class="4rotate">
+										<h4><b>John Doe</b></h4>
+										<p>Architect & Engineer</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="4rotate">Grand Child</a>
+							<ul>
+								<li><a href="#" class="4rotate">aaaaaaaa</a>
+                                    <ul>
+                                <li><a href="#" class="4rotate">aaaaaaaa</a></li>
+								<li><a href="#" class="4rotate">aaaaaaaa</a></li>
+								<li><a href="#" class="4rotate">aaaaaaaa</a></li>
+                                    </ul>
+                                </li>
+								<li><a href="#" class="4rotate">aaaaaaaa</a></li>
+								<li><a href="#" class="4rotate">aaaaaaaa</a></li>
+								<li><a href="#" class="4rotate">aaaaaaaa</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>-->
+
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
+
+    <div id="overall" class="tree">
+
+                <ul>
+            <li>
+                <a href="#" class="4rotate">
+
+                    <h5>Raw/City water</h5>
+                    <hr> 43070
+                    <hr>
+                    <div class="water">
+                        <p>100%</p>
+
+                    </div>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" class="4rotate">
+                            <h6>Gardening ,Toilet, Canteen</h6>
+                            <hr> 0
+                            <hr>
+                            <!--<p>0.01%</p>-->
+                            <div class="status">0%
+                                <!--<div class="water10"></div>-->
+
+                            </div>
+                        </a>
+                    </li>
+
+                                        <li>
+                        <a href="#" class="4rotate">
+                            <h6>HVAC/CT/CA</h6>
+                            <hr> 5579
+                            <hr>
+                            <!--<p>0.01%</p>-->
+                            <div class="status">13%
+                                <div class="water10"></div>
+
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#" class="4rotate">
+                            <h6>DI/Water making inlet</h6>
+                            <hr> 42952
+                            <hr>
+                            <div class="status"> 99.7%
+                                <div class="water90"> </div>
+                            </div>
+                        </a>
+
+
+                        <ul>
+
+                            <li>
+                                <a href="#" class="4rotate">
+                                    <h6>DI water Reject</h6>
+                                    <hr> 0
+                                    <hr>
+                                    <div class="status">0%
+                                        <!--<div class="water1-50 width20"></div>-->
+                                    </div>
+                                </a>
+
+                                <ul>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>DI water loss</h6>
+                                            <hr> 43006
+                                            <hr>100% Total
+                                            <hr>
+                                            <div class="status">100% RO
+                                                <div class="water90"></div>
+                                            </div>
+                                        </a>
+                                                                                        <ul>
+                                                    <li>
+                                                        <a href="#" id="etp" class="4rotate">ETP</a>
+                                                    </li>
+                                                </ul>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>DI water reuse</h6>
+                                            <hr> 0
+                                            <hr>0 Total
+                                            <hr>
+                                            <!--<p>2%</p>-->
+                                            <div class="status">0% RO
+                                                <!--<div class="water1-50 width5"></div>-->
+                                            </div>
+                                        </a>
+                                                                                        <ul>
+                                                    <li>
+                                                        <a href="#" id="etp" class="4rotate">ETP</a>
+                                                    </li>
+                                                </ul>
+                                    </li>
+
+
+                                    <!--<li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Cooling tower and Chiller </h6>
+                                            <hr> 5549
+                                            <hr>
+                                           
+                                            <div class="status">13%
+                                                <div class="water1-50 width20"></div>
+                                            </div>
+                                        </a>
+                                                                                <ul>
+                                            <li>
+                                                <a href="#" class="4rotate">
+                                                    Cooling tower Blow down
+                                                    <hr>
+                                                    796
+                                                    <hr>
+                                            <div class="status">14%
+                                                <div class="water1-50 width20"></div>
+                                            </div>
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" id="etp" class="4rotate">ETP</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>-->
+
+                                </ul>
+
+                            </li>
+
+                            <!--<li>
+                                <a href="#" class="4rotate">
+                                    <h6>DI water Reject RO reject <br> (High Salt and Conductivity) </h6>
+                                    <hr> 6350
+                                    <hr>
+                                    <div class="status">15%
+                                        <div class="water1-50 width20"></div>
+                                    </div>
+                                </a>
+
+                                <ul>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Reject AREATION TANK</h6>
+                                            <hr> 5250
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Recycle to some process</h6>
+                                            <hr> 1100
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                            </li>-->
+
+                            <li>
+                                <a href="#" class="4rotate">
+                                    <h6>DI water outlet</h6>
+                                    <hr> 0
+                                    <hr>
+                                    <!--<p>65%</p>-->
+                                    <div class="status">0%
+                                        <!--<div class="water70 width70"></div>-->
+                                    </div>
+                                </a>
+
+                                <ul>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Water in product</h6>
+                                            <hr> 0
+                                            <hr>0% Total
+                                            <hr>
+                                            <!--<p>13%</p>-->
+                                            <div class="status">0% DI
+                                                <!--<div class="water1-50 width10"></div>-->
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>C&S</h6>
+                                            <hr> 0
+                                            <hr>0% Total
+                                            <hr>
+                                            <!--<p>50%</p>-->
+                                            <div class="status">0% DI
+                                                <!--<div class="water1-50 width50"></div>-->
+                                            </div>
+                                        </a>
+                                                                                <ul>
+                                            <li>
+                                                <a href="#" id="etp" class="4rotate">
+                                                    ETP
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="4rotate">
+                                            <h6>Other use</h6>
+                                            <hr> 0
+                                            <hr>
+                                            <!--<p>1%</p>-->
+                                            <div class="status">0%
+                                                <!--<div class="water1-50 width10"></div>-->
+                                            </div>
+                                        </a>
+                                        <!--<ul>
+                                            <li>
+                                                <a href="#" class="4rotate">
+                                                    Boiler blow down
+                                                    <hr>
+                                                    220
+                                                    <hr>
+                                            <div class="status">37%
+                                                <div class="water1-50 width30"></div>
+                                            </div>
+                                                </a>
+                                            </li>
+                                        </ul>-->
+                                    </li>
+
+                                    <!--<li>
+                                        <a href="#" class="4rotate">
+                                            <h6>O2 reject</h6>
+                                            <hr> 648
+                                            <hr>
+                                           
+                                            <div class="status">2%
+                                                <div class="water1-50 width10"></div>
+                                            </div>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#" id="recycle">
+                                                    Recycle
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>-->
+
+                                </ul>
+
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <!--<li>
+                        <a href="#" class="4rotate">
+                            <h6>MMF/Backwash</h6>
+                            <hr> 54
+                            <hr>
+                            <div class="status">0.01%
+                                <div class="water10"></div>
+
+                            </div>
+                        </a>
+                    </li>-->
+
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
+
+    <!--<button id="view-source" onclick="changeRotate()">Rotate</button>-->
+<div id="view-source">
+    <nav class="menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+  
+  <a href="#" class="menu-item"  onclick="changeRotate()"> <i class="fa fa-undo"></i> </a>
+  <a href="#" class="menu-item" onclick="showmain()"> <i class="fa fa-tint" ></i> </a>
+  <a href="#" class="menu-item" onclick="showoverall()"> <i class="fa fa-globe" ></i> </a>
+  <!--<a href="#" class="menu-item"> <i class="fa fa-envelope"></i> </a>-->
+  
+  
+</nav>
+</div>
+
+<!-- filters -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+          
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+          <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+          <feComposite in2="shadow" in="goo" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+          <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+</svg>
+
+</body>
+
+</html>
