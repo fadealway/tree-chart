@@ -76,10 +76,43 @@ padding: 20px;
   background-color: #3F51B5;
 }
 .Purple{
-  background-color: #9C27B0;
+  background-color: #673AB7;
 }
+.Purple2{
+ background-color: #9C27B0;}
+
+.Purple3{
+ background-color: #E91E63;}
+      
+
 .red {
   background-color: #F44336;
+}
+
+.red2 {
+        background-color: #FF9800;
+}
+
+.red3 {
+        background-color: #FFC107;
+}
+.Teal {
+  background-color: #009688;
+}
+
+.green {
+      background-color: #4CAF50;
+
+}
+.green2 {
+     background-color: #8BC34A;
+
+
+}
+
+.green3 {
+    background-color: #CDDC39;
+
 }
 
 
@@ -143,9 +176,45 @@ background-color: #fafafa;
   text-align: center;
   list-style-type: none;
   position: relative;
-  padding: 1em .5em 0 .5em;
+  padding: 15px 2px 2px 2px;
+  /*padding: 1em .5em 0 .5em;*/
   /* Standard syntax */
 }
+
+li#left{
+  left: 10%;
+}
+
+li#right{
+  right: 10%;
+}
+
+/*.works:first-child:before
+{
+	color: green;
+	content: 'working ';
+}
+.works:not(:first-child):after
+{
+	color: green;
+	content: ' is working';
+}*/
+
+.tree > ul > li > ul > li:not(:first-child):before, .tree > ul > li > ul > li:not(:first-child):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 47%;
+  border-top: 5px dashed #00bcd4;
+  width: 42%;
+  height: 0.7em;
+  -webkit-animation: 1s mymove ease infinite;
+  /* Chrome, Safari, Opera */
+  animation: 1s mymove ease infinite;
+}
+
+
+
 .tree li::before, .tree li::after {
   content: '';
   position: absolute;
@@ -158,6 +227,8 @@ background-color: #fafafa;
   /* Chrome, Safari, Opera */
   animation: 1s mymove ease infinite;
 }
+
+
 @-webkit-keyframes mymove {
   to {
     border-top: 5px solid #00bcd4;
