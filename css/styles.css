@@ -4,6 +4,12 @@ html, body {
     font-weight: 400;
     line-height: 20px;
 }
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
@@ -66,7 +72,8 @@ h6#mdl {
   /*New version*/
     margin: 0;
     /*background-color: #00BCD4;*/
-padding: 20px;
+/*padding: 20px;*/
+padding: 15px;
     color: #fff;
     border-radius: 5px 5px 0px 0px;
 }
@@ -154,7 +161,11 @@ background-color: #fafafa;
 
 
 .tree {
-
+  top: 10px;
+left: -10%;
+right: -10%;
+bottom: -10%; 
+    position: absolute;
 }
 
 .tree ul {
