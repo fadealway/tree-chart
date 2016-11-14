@@ -52,6 +52,47 @@ h5 {
     line-height: 1;
     letter-spacing: .02em;
 }
+
+h5#mdl {
+  /*New version*/
+    margin: 0;
+    background-color: #00BCD4;
+padding: 20px 50px 20px 50px;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+h6#mdl {
+  /*New version*/
+    margin: 0;
+    /*background-color: #00BCD4;*/
+padding: 20px;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.Indigo {
+  background-color: #3F51B5;
+}
+.Purple{
+  background-color: #9C27B0;
+}
+.red {
+  background-color: #F44336;
+}
+
+
+table {
+      padding: 10px;
+    width: 100%;
+}
+
+
+td {
+  padding: 5px;
+}
+
 h5, h6 {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     margin: 24px 0 16px;
@@ -174,8 +215,8 @@ background-color: #fafafa;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 2px 16px;
-  padding: .5em .75em;
+  /*padding: 2px 16px;*/
+  /*padding: .5em .75em;*/
   text-decoration: none;
   display: inline-block;
   border-radius: 5px;
@@ -309,10 +350,12 @@ div.width100{
 a#etp {
   /*display: block;*/
   background-color: #FF5722;
+  padding: 10px;
 }
 
 a#recycle {
   background-color: #8bc34a;
+  padding: 10px;
 }
 
 
