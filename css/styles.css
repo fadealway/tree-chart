@@ -63,19 +63,59 @@ h5#mdl {
   /*New version*/
     margin: 0;
     background-color: #00BCD4;
-padding: 20px 50px 20px 50px;
+padding: 15px 40px 15px 40px;
     color: #fff;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
 }
 
 h6#mdl {
   /*New version*/
     margin: 0;
-    /*background-color: #00BCD4;*/
+    /*background-color: #3F51B5;*/
 /*padding: 20px;*/
-padding: 15px;
+/*padding: 10px;*/
+padding: 10px 10px 14px 10px;
     color: #fff;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
+}
+
+h6.low{
+background-color: #9C27B0;
+}
+
+div.fab-low {
+    color: #68EFAD;
+}
+
+div.fab-low > span > i.low {
+    color: #1B5E20;
+        font-size: 25px;
+}
+
+h6.mid{
+    background-color: #795548;
+}
+
+div.fab-mid{
+color: #FFAB40
+;
+}
+div.fab-mid > span > i.mid {
+   color: #212121;    font-size: 22px;
+       font-size: 25px;
+}
+    
+h6.high{
+    background-color:  #3F51B5;
+}
+
+div.fab-high{
+    color: #FF4081;
+}
+
+div.fab-high > span > i.high {
+    color: #FCE4EC;
+        font-size: 25px;
 }
 
 
@@ -294,18 +334,21 @@ li#right{
 }
 
 .tree li a {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      /*position: initial;*/
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
   -webkit-transition: 0.3s;
   transition: 0.3s;
   /*padding: 2px 16px;*/
   /*padding: .5em .75em;*/
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #333;
   background: #fff;
-  /*position: relative;*/
-  top: 5px;
+  position: relative;
+  /*top: 5px;*/
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
 }
 
@@ -657,4 +700,28 @@ animation: watermove 1s ease infinite;
 
 div#overall {
   display: none;
+}
+
+
+div.fab {
+ /*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 50px;
+    top: 27%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #e91e63;
+    left: 85%;
+    color: #fff;*/
+
+        /*font-size: 12px;*/
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    border-radius: 50px;
+    top: 17%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /* background-color: #e91e63; */
+    left: 77%;
+    /*color: #E91E63;*/
 }
